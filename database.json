@@ -1,0 +1,17 @@
+{
+  "disciplinas": [
+    { "name": "Desafio S1", "category": "Português", "color": "#28a745" },
+    { "name": "Desafio S2", "category": "Física", "color": "#ffc107" },
+    { "name": "Desafio S3", "category": "Física", "color": "#ffc107" }
+  ],
+  "carreiras": [
+    { "name": "Desafio R1", "category": "Medicina", "color": "#28a745" },
+    { "name": "Desafio R2", "category": "Arquitetura", "color": "#ffc107" },
+    { "name": "Desafio R3", "category": "Economia", "color": "#dc3545" }
+  ],
+  "desafios": [
+    { "name": "Desafio H1", "category": "Hard code", "color": "#28a745" },
+    { "name": "Desafio H2", "category": "Super hard code", "color": "#ffc107" },
+    { "name": "Desafio H3", "category": "Ultra hard code", "color": "#dc3545" }
+  ]
+}

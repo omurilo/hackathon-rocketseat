@@ -1,0 +1,41 @@
+.totemfy-header {
+  font-size: 1.3em;
+}
+.dashboard-nav {
+  background-color: #7109c1;
+  font-weight: bold;
+}
+.nav-item a {
+  color: #ecf0f1;
+}
+.nav-item svg {
+  margin-right: 5px;
+}
+.navbar-brand {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.5em;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 100ms ease-in-out;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: none;
+}
+
+.btn-secondary:hover {
+  background-color: transparent;
+  border: none;
+}
+
+.btn-secondary:active {
+  background-color: transparent;
+  border: none;
+}
