@@ -24,6 +24,7 @@
 }
 
 .container-code {
+  background-color: #ecf0f1;
   width: 30vw;
   border-radius: 8px;
   border: 2px solid;
@@ -42,5 +43,5 @@
 .tips-container {
   display: flex;
   flex: 1;
-  background-color: #43cfec;
+  background-color: #ecf0f1;
 }

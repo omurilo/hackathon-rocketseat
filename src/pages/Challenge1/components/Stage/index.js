@@ -10,6 +10,8 @@ import {
 
 import './index.css';
 
+import Code from '~/pages/Challenge1/components/Code';
+
 function StageContainer({ width, height, delta, radius }) {
   const [circleX, setCircleX] = useState(width / 2);
   const [circleY, setCircleY] = useState(height / 2);
@@ -75,7 +77,9 @@ function StageContainer({ width, height, delta, radius }) {
   return (
     <div>
       <div className="container-top">
-        <div className="container-code">Código</div>
+        <div className="container-code">
+          <Code />
+        </div>
         <Stage width={width} height={height} className="container-events">
           <Layer>
             <Circle
