@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import Pill from '~/components/Pill';
 import CardGrid from '~/components/CardGrid';
 import Page from '~/components/Page';
@@ -111,36 +112,38 @@ export default function Challenges({ location }) {
           .filter(searchFilter)
           .filter(statusFilter)
           .map(challenge => (
-            <Card color="#fff" bgColor={challenge.color} key={challenge.name}>
-              <header>
-                <h3>{challenge.name}</h3>
-              </header>
-              <StyledMain>
-                <p>
-                  {/* <FaTasks size={ICON_SIZE} /> */}
-                  {challenge.category}
-                </p>
-              </StyledMain>
-              <footer>
-                {/* {sessionAdmin.permission > 1 && (
-                  <button type="button" onClick={() => handleModalOpen(task)}>
-                    <FaEdit size={20} />
-                  </button>
-                )}
-                {sessionAdmin.permission > 2 && (
-                  <button
-                    type="button"
-                    onClick={() => {
-                      window.confirm(
-                        'Tem certeza que deseja deletar esta tarefa?'
-                      ) && handleTaskDelete(task);
-                    }}
-                  >
-                    <FaTrashAlt size={20} />
-                  </button>
-                )} */}
-              </footer>
-            </Card>
+            <Link to={`/desafio/${challenge.id}`}>
+              <Card color="#fff" bgColor={challenge.color} key={challenge.name}>
+                <header>
+                  <h3>{challenge.name}</h3>
+                </header>
+                <StyledMain>
+                  <p>
+                    {/* <FaTasks size={ICON_SIZE} /> */}
+                    {challenge.category}
+                  </p>
+                </StyledMain>
+                <footer>
+                  {/* {sessionAdmin.permission > 1 && (
+                    <button type="button" onClick={() => handleModalOpen(task)}>
+                      <FaEdit size={20} />
+                    </button>
+                  )}
+                  {sessionAdmin.permission > 2 && (
+                    <button
+                      type="button"
+                      onClick={() => {
+                        window.confirm(
+                          'Tem certeza que deseja deletar esta tarefa?'
+                        ) && handleTaskDelete(task);
+                      }}
+                    >
+                      <FaTrashAlt size={20} />
+                    </button>
+                  )} */}
+                </footer>
+              </Card>
+            </Link>
           ))}
       </CardGrid>
     </Page>
