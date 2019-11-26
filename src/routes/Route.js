@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+// import { useSelector, useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 import { Route, Redirect } from 'react-router-dom';
 import api from '~/services/api';
 
 import Header from '~/components/Header';
-import { signOut } from '~/store/modules/auth/actions';
+// import { signOut } from '~/store/modules/auth/actions';
 
 export default function RouteWrapper({
   component: Component,
