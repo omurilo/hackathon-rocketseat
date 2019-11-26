@@ -1,0 +1,46 @@
+.keyboard-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30vw;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  background-color: #43cfec;
+  border: 1px solid #43cfec;
+  padding: 1.1rem;
+  margin: 0.3rem;
+  outline: none;
+  border-radius: 5px;
+}
+
+.container-top {
+  display: flex;
+}
+
+.container-code {
+  width: 30vw;
+  border-radius: 8px;
+  border: 2px solid;
+  border-color: #43cfec;
+}
+
+.container-events {
+  flex: 1;
+}
+
+.container-bottom {
+  display: flex;
+  margin-top: 30px;
+}
+
+.tips-container {
+  display: flex;
+  flex: 1;
+  background-color: #43cfec;
+}
