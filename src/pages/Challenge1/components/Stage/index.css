@@ -26,8 +26,9 @@
 .container-code {
   background-color: #ecf0f1;
   width: 30vw;
-  border-radius: 8px;
+  padding: 5px;
   border: 2px solid;
+  border-radius: 8px;
   border-color: #43cfec;
 }
 
@@ -43,5 +44,8 @@
 .tips-container {
   display: flex;
   flex: 1;
-  background-color: #ecf0f1;
+  padding: 5px;
+  border: 2px solid;
+  border-radius: 8px;
+  border-color: #43cfec;
 }

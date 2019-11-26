@@ -16,6 +16,8 @@ function StageContainer({ width, height, delta, radius }) {
   const [circleX, setCircleX] = useState(width / 2);
   const [circleY, setCircleY] = useState(height / 2);
 
+  const [codeBlocks, setCodeBlocks] = useState([]);
+
   const dimensions = {
     maxX: width - radius,
     minX: radius,
@@ -28,21 +30,25 @@ function StageContainer({ width, height, delta, radius }) {
       case 'Up':
         if (circleY - steps * delta > dimensions.minY) {
           setCircleY(circleY - steps * delta);
+          setCodeBlocks([...codeBlocks, `MovePlayer('Up', 1)`]);
         }
         break;
       case 'Left':
         if (circleX - steps * delta > dimensions.minX) {
           setCircleX(circleX - steps * delta);
+          setCodeBlocks([...codeBlocks, `MovePlayer('Left', 1)`]);
         }
         break;
       case 'Right':
         if (circleX + steps * delta < dimensions.maxX) {
           setCircleX(circleX + steps * delta);
+          setCodeBlocks([...codeBlocks, `MovePlayer('Right', 1)`]);
         }
         break;
       case 'Down':
         if (circleY + steps * delta < dimensions.maxY) {
           setCircleY(circleY + steps * delta);
+          setCodeBlocks([...codeBlocks, `MovePlayer('Down', 1)`]);
         }
         break;
       default:
@@ -78,7 +84,7 @@ function StageContainer({ width, height, delta, radius }) {
     <div>
       <div className="container-top">
         <div className="container-code">
-          <Code />
+          <Code codeBlocks={codeBlocks} />
         </div>
         <Stage width={width} height={height} className="container-events">
           <Layer>

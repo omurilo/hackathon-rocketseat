@@ -1,13 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import { CodeBox } from './styles';
 
-export default function Code() {
-  const [codeBlocks, setCodeBlocks] = useState([
-    'linha de código',
-    'code line',
-    'blablabla',
-  ]);
+export default function Code({ codeBlocks }) {
   return (
     <CodeBox>
       {codeBlocks.map(codeBlock => (
