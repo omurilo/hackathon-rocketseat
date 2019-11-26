@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { FaCode, FaBook, FaUserTie } from 'react-icons/fa';
 
 // import { signOut } from '~/store/modules/auth/actions';
+import Brand from '~/assets/brand.png';
 import { StyledLink } from './styles';
 import './styles.css';
 
@@ -23,7 +24,14 @@ export default function Header({ location }) {
     <header className="totemfy-header">
       <nav className="dashboard-nav navbar navbar-expand-xl navbar-dark">
         <Link to="/disciplinas">
-          <span className="navbar-brand">SmartPuzzle</span>
+          <span className="navbar-brand">
+            <img
+              src={Brand}
+              alt="Logo do Brain Puzzle"
+              style={{ width: '52px', height: 'auto' }}
+            />{' '}
+            SmartPuzzle
+          </span>
         </Link>
         <button
           className="navbar-toggler"

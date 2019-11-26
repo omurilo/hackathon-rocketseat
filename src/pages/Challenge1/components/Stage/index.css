@@ -24,6 +24,7 @@
 }
 
 .container-code {
+  height: 400px;
   background-color: #ecf0f1;
   width: 30vw;
   padding: 5px;

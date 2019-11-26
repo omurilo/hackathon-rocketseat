@@ -5,6 +5,7 @@ export const CodeBox = styled.ul`
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  overflow-y: auto;
 
   li {
     text-align: end;
