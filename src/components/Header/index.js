@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaCode, FaBook, FaUserTie } from 'react-icons/fa';
+import { FaBook, FaUserTie } from 'react-icons/fa';
 
 import Brand from '~/assets/brand.png';
 import { StyledLink } from './styles';
@@ -61,19 +61,6 @@ export default function Header({ location }) {
                 >
                   <FaUserTie size={21} />
                   Carreiras
-                </StyledLink>
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/desafios">
-                <StyledLink
-                  className="nav-link"
-                  highlight={isHighlighted('/desafios')}
-                  data-toggle="collapse"
-                  data-target=".navbar-collapse.show"
-                >
-                  <FaCode size={21} />
-                  Desafios
                 </StyledLink>
               </Link>
             </li>

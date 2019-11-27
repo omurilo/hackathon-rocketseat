@@ -19,6 +19,16 @@
   border-radius: 5px;
 }
 
+.button:active {
+  background-color: #f30092;
+  border-color: #f30092;
+}
+
+.button:disabled {
+  background-color: #eee;
+  border-color: #eee;
+}
+
 .container-top {
   display: flex;
 }
@@ -34,7 +44,9 @@
 }
 
 .container-events {
+  display: flex;
   flex: 1;
+  justify-content: center;
 }
 
 .container-bottom {
@@ -49,4 +61,8 @@
   border: 2px solid;
   border-radius: 8px;
   border-color: #43cfec;
+}
+
+.tips-container p {
+  margin-bottom: 8px;
 }
