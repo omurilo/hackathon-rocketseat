@@ -7,6 +7,7 @@ import './index.css';
 
 import Code from '~/pages/BasicChallenge/components/Code';
 import Car from '~/assets/automobile.svg';
+import { StyledForm } from './styles';
 
 function formattedText(lines) {
   return lines.map(line => (
@@ -101,7 +102,7 @@ function StageContainer({ width, height, delta, radius }) {
         </div>
       </div>
       <div className="container-bottom">
-        <div className="keyboard-container">
+        <StyledForm>
           <Form onSubmit={runAnimation}>
             <div className="input-wrapper">
               <p>Distância</p>
@@ -117,7 +118,7 @@ function StageContainer({ width, height, delta, radius }) {
               </button>
             </div>
           </Form>
-        </div>
+        </StyledForm>
         <div className="tips-container">
           <p>Estamos dando dicas</p>
         </div>
