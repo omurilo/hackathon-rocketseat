@@ -5,7 +5,7 @@ import Alert from '~/services/Alert';
 
 import './index.css';
 
-import Code from '~/pages/BasicChallenge/components/Code';
+import Code from '~/pages/Tutorial/components/Code';
 import Car from '~/assets/automobile.svg';
 import { StyledForm } from './styles';
 
