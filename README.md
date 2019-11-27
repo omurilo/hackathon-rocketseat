@@ -33,7 +33,7 @@ Porque ele consegue perceber que a programação não é um assunto geek (de out
 1. Instale as dependências do projeto: `yarn install`;
 2. Inicie o servidor: `yarn server`;
 3. Inicie a aplicação web: `yarn start`;
-4. Acesse `http://localhost:3000`.
+4. Acesse `http://localhost:3000/disciplinas`.
 
 ### Como será o fluxo completo de utilização?
 1. A instituição de ensino adquire a plataforma;
