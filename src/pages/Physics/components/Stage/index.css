@@ -1,0 +1,66 @@
+.keyboard-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  background-color: #43cfec;
+  border: 1px solid #43cfec;
+  padding: 1.1rem;
+  margin: 0.3rem;
+  outline: none;
+  border-radius: 5px;
+}
+
+.container-top {
+  display: flex;
+}
+
+.container-code {
+  height: 400px;
+  background-color: #ecf0f1;
+  width: 30vw;
+  padding: 5px;
+  border: 2px solid;
+  border-radius: 8px;
+  border-color: #43cfec;
+}
+
+.container-events {
+  flex: 1;
+}
+
+.container-bottom {
+  display: flex;
+  margin-top: 10px;
+}
+
+.tips-container {
+  display: flex;
+  flex: 1;
+  padding: 5px;
+  border: 2px solid;
+  border-radius: 8px;
+  border-color: #43cfec;
+}
+
+.input-wrapper p {
+  margin-bottom: 0;
+}
+
+.input-wrapper input {
+  margin-bottom: 4px;
+}
+
+.road {
+  border-bottom: #000 solid 2px;
+  margin: 0 10px;
+}
