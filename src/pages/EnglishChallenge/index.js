@@ -82,7 +82,7 @@ export default function EnglishChallenge() {
     }
     Alert.fire({
       title: `Resposta ${correct ? 'Correta!' : 'Incorreta'}`,
-      icon: 'success',
+      icon: correct ? 'success' : 'error',
     });
   }
 

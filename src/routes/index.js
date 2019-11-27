@@ -13,7 +13,7 @@ export default function Routes() {
       <Route exact path="/disciplinas" component={Challenges} />
       <Route exact path="/desafios" component={Challenges} />
       <Route exact path="/carreiras" component={Challenges} />
-      <Route exact path="/disciplina/1" component={Tutorial} />
+      <Route exact path="/disciplina/:id/:level" component={Tutorial} />
       <Route exact path="/disciplina/2" component={EnglishChallenge} />
       <Route exact path="/disciplina/3" component={PhysicsChallenge} />
     </Switch>

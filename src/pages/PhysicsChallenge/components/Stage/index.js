@@ -5,7 +5,7 @@ import Alert from '~/services/Alert';
 
 import './index.css';
 
-import Code from '~/pages/BasicChallenge/components/Code';
+import Code from '~/pages/Tutorial/components/Code';
 import Car from '~/assets/automobile.svg';
 import { StyledForm } from './styles';
 
@@ -17,7 +17,7 @@ function formattedText(lines) {
   ));
 }
 
-function StageContainer({ width, height, delta, radius }) {
+function StageContainer({ width, height }) {
   const [circleX, setCircleX] = useState(width / 2);
   const [animationTime, setAnimationTime] = useState(0);
   const [codeBlocks, setCodeBlocks] = useState([]);

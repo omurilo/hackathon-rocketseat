@@ -84,7 +84,11 @@ export default function Challenges({ location }) {
           .filter(searchFilter)
           .filter(statusFilter)
           .map(challenge => (
-            <Link to={`/disciplina/${challenge.id}`}>
+            <Link
+              to={`/disciplina/${challenge.id}${
+                challenge.id === 1 ? '/1' : ''
+              }`}
+            >
               <Card color="#fff" bgColor={challenge.color} key={challenge.name}>
                 <header>
                   <h3>{challenge.name}</h3>
