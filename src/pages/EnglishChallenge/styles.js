@@ -5,7 +5,7 @@ export const Button = styled.button`
   margin-left: 10px;
   align-self: flex-end;
   padding: 5px 10px;
-  background: #f00;
+  background: #fe9a01;
   color: #fff;
   border: 0;
   border-radius: 4px;
@@ -16,7 +16,7 @@ export const Button = styled.button`
   transition: background 0.2s;
 
   &:hover {
-    background: ${darken(0.03, '#f00')};
+    background: ${darken(0.03, '#fe9a01')};
   }
 `;
 
