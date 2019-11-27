@@ -11,7 +11,7 @@ export const BoxItem = styled.li`
   text-align: start;
   border-radius: 5px;
   margin: 5px;
-  padding: 5px;
+  padding: 15px;
   background-color: ${props =>
     props.origin === 'user' ? '#82cf02' : '#f30092'};
   color: #fff;

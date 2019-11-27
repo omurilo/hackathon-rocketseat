@@ -6,9 +6,9 @@ export default function Challenge(props) {
   return (
     <Page title="Tutorial">
       <ChallengeContainer
-        width={500}
+        width={600}
         height={400}
-        delta={25}
+        delta={60}
         radius={30}
         {...props}
       />
