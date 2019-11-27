@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-
 import { Form, Input } from '@rocketseat/unform';
+import Alert from '~/services/Alert';
 
 import './index.css';
 
@@ -20,6 +20,7 @@ function StageContainer({ width, height, delta, radius }) {
   const [circleX, setCircleX] = useState(width / 2);
   const [animationTime, setAnimationTime] = useState(0);
   const [codeBlocks, setCodeBlocks] = useState([]);
+  const [showButton, setShowButton] = useState(false);
 
   function runAnimation(data) {
     const distance = parseInt(data.distance, 10);
@@ -35,6 +36,35 @@ function StageContainer({ width, height, delta, radius }) {
         '}',
       ]),
     ]);
+    setShowButton(true);
+  }
+
+  function startChallenge() {
+    Alert.fire({
+      title: 'Hora do código!',
+      text:
+        'Para criar uma função que devolve a distância percorrida pelo carrinho, quais parâmetros a função precisa?',
+      inputPlaceholder: '(parametro1, parametro2)',
+      input: 'textarea',
+      inputValue: '',
+      inputValidator: value => {
+        if (
+          value === '(velocidade, tempo)' ||
+          value === '(tempo, velocidade)'
+        ) {
+          setTimeout(() => {
+            Alert.fire({
+              icon: 'success',
+              title: 'Parabéns! Você concluiu o desafio',
+            });
+          }, 500);
+        } else {
+          return 'Parâmetros incorretos :(';
+        }
+
+        return 0;
+      },
+    });
   }
 
   return (
@@ -58,6 +88,16 @@ function StageContainer({ width, height, delta, radius }) {
               transition={{ duration: animationTime }}
             />
           </div>
+          <div className="button-wrapper">
+            <button
+              type="button"
+              onClick={startChallenge}
+              hidden={!showButton}
+              className="orange-button"
+            >
+              Desafio
+            </button>
+          </div>
         </div>
       </div>
       <div className="container-bottom">
@@ -69,9 +109,13 @@ function StageContainer({ width, height, delta, radius }) {
             </div>
             <div className="input-wrapper">
               <p>Tempo</p>
-              <Input type="number" name="time" id="time" max="30" />
+              <Input type="number" name="time" id="time" max="15" />
             </div>
-            <button type="submit">Vai!</button>
+            <div className="button-wrapper">
+              <button type="submit" className="blue-button">
+                Vai !
+              </button>
+            </div>
           </Form>
         </div>
         <div className="tips-container">
