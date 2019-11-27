@@ -8,13 +8,13 @@
     },
     {
       "id": 2,
-      "name": "Desafio S2",
-      "category": "Física",
-      "color": "#ffc107"
+      "name": "Desafio de Inglês",
+      "category": "Inglês",
+      "color": "#dc3545"
     },
     {
       "id": 3,
-      "name": "Desafio S3",
+      "name": "Desafio de Física",
       "category": "Física",
       "color": "#ffc107"
     }

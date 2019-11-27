@@ -5,6 +5,7 @@ import Route from './Route';
 import Challenges from '~/pages/Challenges';
 import BasicChallenge from '~/pages/BasicChallenge';
 import EnglishChallenge from '~/pages/EnglishChallenge';
+import PhysicsChallenge from '~/pages/PhysicsChallenge';
 
 export default function Routes() {
   return (
@@ -14,6 +15,7 @@ export default function Routes() {
       <Route exact path="/carreiras" component={Challenges} />
       <Route exact path="/desafio/1" component={BasicChallenge} />
       <Route exact path="/desafio/2" component={EnglishChallenge} />
+      <Route exact path="/desafio/3" component={PhysicsChallenge} />
     </Switch>
   );
 }
