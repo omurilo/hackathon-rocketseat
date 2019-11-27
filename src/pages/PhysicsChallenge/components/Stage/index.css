@@ -1,4 +1,4 @@
-.keyboard-container {
+.keyboard-container-physics {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6,12 +6,12 @@
   width: 30vw;
 }
 
-.buttons-container {
+.buttons-container-physics {
   display: flex;
   justify-content: center;
 }
 
-.button {
+.button-physics {
   background-color: #43cfec;
   border: 1px solid #43cfec;
   padding: 1.1rem;
@@ -20,11 +20,11 @@
   border-radius: 5px;
 }
 
-.container-top {
+.container-top-physics {
   display: flex;
 }
 
-.container-code {
+.container-code-physics {
   height: 400px;
   background-color: #ecf0f1;
   width: 30vw;
@@ -34,16 +34,16 @@
   border-color: #43cfec;
 }
 
-.container-events {
+.container-events-physics {
   flex: 1;
 }
 
-.container-bottom {
+.container-bottom-physics {
   display: flex;
   margin-top: 10px;
 }
 
-.tips-container {
+.tips-container-physics {
   display: flex;
   flex: 1;
   padding: 5px;
@@ -52,26 +52,26 @@
   border-color: #43cfec;
 }
 
-.input-wrapper p {
+.input-wrapper p-physics {
   margin-bottom: 0;
 }
 
-.input-wrapper input {
+.input-wrapper input-physics {
   margin-bottom: 4px;
 }
 
-.road {
+.road-physics {
   border-bottom: #000 solid 2px;
   margin: 0 10px;
 }
 
-.button-wrapper {
+.button-wrapper-physics {
   display: flex;
   justify-content: center;
   margin-top: 15px;
 }
 
-.orange-button {
+.orange-button-physics {
   padding: 5px;
   background-color: #fe9a01;
   color: #fff;
@@ -80,7 +80,7 @@
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
-.blue-button {
+.blue-button-physics {
   padding: 5px;
   background-color: #43cfec;
   color: #fff;

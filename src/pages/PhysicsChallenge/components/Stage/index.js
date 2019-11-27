@@ -70,12 +70,12 @@ function StageContainer({ width, height }) {
 
   return (
     <div>
-      <div className="container-top">
-        <div className="container-code">
+      <div className="container-top-physics">
+        <div className="container-code-physics">
           <Code codeBlocks={codeBlocks} />
         </div>
-        <div width={width} height={height} className="container-events">
-          <div className="road">
+        <div width={width} height={height} className="container-events-physics">
+          <div className="road-physics">
             <motion.img
               key={Car}
               src={Car}
@@ -89,37 +89,37 @@ function StageContainer({ width, height }) {
               transition={{ duration: animationTime }}
             />
           </div>
-          <div className="button-wrapper">
+          <div className="button-wrapper-physics">
             <button
               type="button"
               onClick={startChallenge}
               hidden={!showButton}
-              className="orange-button"
+              className="orange-button-physics"
             >
               Desafio
             </button>
           </div>
         </div>
       </div>
-      <div className="container-bottom">
+      <div className="container-bottom-physics">
         <StyledForm>
           <Form onSubmit={runAnimation}>
-            <div className="input-wrapper">
+            <div className="input-wrapper-physics">
               <p>Distância</p>
               <Input type="number" name="distance" id="distance" max="255" />
             </div>
-            <div className="input-wrapper">
+            <div className="input-wrapper-physics">
               <p>Tempo</p>
               <Input type="number" name="time" id="time" max="15" />
             </div>
-            <div className="button-wrapper">
-              <button type="submit" className="blue-button">
+            <div className="button-wrapper-physics">
+              <button type="submit" className="blue-button-physics">
                 Vai !
               </button>
             </div>
           </Form>
         </StyledForm>
-        <div className="tips-container">
+        <div className="tips-container-physics">
           <p>Estamos dando dicas</p>
         </div>
       </div>
