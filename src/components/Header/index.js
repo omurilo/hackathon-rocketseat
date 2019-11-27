@@ -1,7 +1,7 @@
 import React from 'react';
 // import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { FaCode, FaBook, FaUserTie } from 'react-icons/fa';
+import { FaBook, FaUserTie } from 'react-icons/fa';
 
 // import { signOut } from '~/store/modules/auth/actions';
 import Brand from '~/assets/brand.png';
@@ -30,7 +30,7 @@ export default function Header({ location }) {
               alt="Logo do Brain Puzzle"
               style={{ width: '52px', height: 'auto' }}
             />{' '}
-            SmartPuzzle
+            BrainPuzzle
           </span>
         </Link>
         <button
@@ -70,19 +70,6 @@ export default function Header({ location }) {
                 >
                   <FaUserTie size={21} />
                   Carreiras
-                </StyledLink>
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/desafios">
-                <StyledLink
-                  className="nav-link"
-                  highlight={isHighlighted('/desafios')}
-                  data-toggle="collapse"
-                  data-target=".navbar-collapse.show"
-                >
-                  <FaCode size={21} />
-                  Desafios
                 </StyledLink>
               </Link>
             </li>

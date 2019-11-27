@@ -19,6 +19,11 @@
   border-radius: 5px;
 }
 
+.button:active {
+  background-color: #f30092;
+  border-color: #f30092;
+}
+
 .container-top {
   display: flex;
 }

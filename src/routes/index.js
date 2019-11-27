@@ -11,7 +11,7 @@ export default function Routes() {
       <Route exact path="/disciplinas" component={Challenges} />
       <Route exact path="/desafios" component={Challenges} />
       <Route exact path="/carreiras" component={Challenges} />
-      <Route exact path="/desafio/:id" component={Challenge1} />
+      <Route exact path="/desafio/:id/:level" component={Challenge1} />
     </Switch>
   );
 }
