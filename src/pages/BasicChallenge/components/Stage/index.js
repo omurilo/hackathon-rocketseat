@@ -10,7 +10,7 @@ import {
 
 import './index.css';
 
-import Code from '~/pages/Challenge1/components/Code';
+import Code from '../Code';
 
 function StageContainer({ width, height, delta, radius }) {
   const [circleX, setCircleX] = useState(width / 2);
