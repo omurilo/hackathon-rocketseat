@@ -6,6 +6,7 @@ import Challenges from '~/pages/Challenges';
 import Tutorial from '~/pages/Tutorial';
 import EnglishChallenge from '~/pages/EnglishChallenge';
 import PhysicsChallenge from '~/pages/PhysicsChallenge';
+import BlocklyChallenge from '~/pages/BlocklyChallenge';
 
 export default function Routes() {
   return (
@@ -16,6 +17,7 @@ export default function Routes() {
       <Route exact path="/disciplina/:id/:level" component={Tutorial} />
       <Route exact path="/disciplina/2" component={EnglishChallenge} />
       <Route exact path="/disciplina/3" component={PhysicsChallenge} />
+      <Route exact path="/blockly" component={BlocklyChallenge} />
     </Switch>
   );
 }
