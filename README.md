@@ -1,24 +1,29 @@
 # Brain Puzzle
 <img width="498" alt="brain-puzzle" src="https://user-images.githubusercontent.com/47576846/69723487-6e7f6d00-10f8-11ea-9eda-fdaa141955ce.png">
 
+## Preview da plataforma
+[Link1](https://www.loom.com/share/69ce2ea1c6be4bf6a042cd67301689c2)
+
+[Link2](https://www.loom.com/share/8c06bde69a2e411c93cd9f55052d5c3d)
+
 ## Descrição do projeto
 ### Qual o problema geral?
-Muita gente no ensino médio não sabe que programação é um caminho viável". Como gerar interesse em programação?
+Muita gente no ensino médio não sabe que programação é um caminho viável. Como gerar interesse em programação?
 
 ### Qual a solução?
-Um puzzle interdisciplinar utilizando as matérias da matriz curricular e as carreiras mais tradicionais (Ex.: engenharia, medicina, direito) para gerar interesse na programação.
+Um puzzle interdisciplinar utilizando as matérias da matriz curricular do ensino médio e as carreiras mais tradicionais (Ex.: engenharia, medicina, direito) em que o aluno pode estar interessado para gerar interesse na programação.
 
-### Qual o problema da instituição resolve?
+### Qual o problema da Instituição de Ensino a plataforma resolve?
 Resolve o problema da falta de interesse dos alunos pelas matérias da instituição utilizando métodos lúdicos ao invés da maneira tradicional.
 
 ### O que vai fazer o aluno utilizar inicialmente essa aplicação?
-A fuga das aulas tradicionais, que são cansativas, métodicas e não fazem com que o aluno assimile inicialmente todo o conhecimento.
+A aplicação é uma alternativa às aulas tradicionais, que são cansativas, métodicas e não fazem com que o aluno assimile inicialmente todo o conhecimento.
 
 ### Por que vai gerar interesse no aluno em programação?
 Porque ele consegue perceber que a programação não é um assunto geek (de outro mundo) e está aplicado em outras áreas de conhecimento. Por exemplo: um aluno que pretendia ser médico, pode perceber que a programação está muito associada à medicina e que ele pode melhorar seu trabalho com o uso da programação.
 
 ### Como vai funcionar o sistema?
-* A empresa vai alimentar inicialmente o sistema, em conjunto com a equipe da escola, com desafios e
+* A empresa vai alimentar inicialmente o sistema em conjunto com a equipe da escola.
 * O professor de cada disciplina vai passar o endereço da aplicação para os alunos, de acordo com a disciplina, e os acompanhará durante as tarefas
 * O aluno vai acessar o sistema, inicialmente, na aula, mas poderá acessá-lo a partir de fora.
 
