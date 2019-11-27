@@ -4,7 +4,7 @@ import ChallengeContainer from './components/Stage';
 
 export default function BasicChallenge() {
   return (
-    <Page title="Desafio Básico">
+    <Page title="Tutorial">
       <ChallengeContainer width={500} height={400} delta={25} radius={30} />
     </Page>
   );

@@ -1,21 +1,12 @@
 import React from 'react';
-// import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { FaCode, FaBook, FaUserTie } from 'react-icons/fa';
 
-// import { signOut } from '~/store/modules/auth/actions';
 import Brand from '~/assets/brand.png';
 import { StyledLink } from './styles';
 import './styles.css';
 
 export default function Header({ location }) {
-  // const dispatch = useDispatch();
-  // const admin = useSelector(state => state.admin.admin);
-
-  // function handleSignOut() {
-  //   dispatch(signOut());
-  // }
-
   function isHighlighted(path) {
     return path.split('/')[1] === location.pathname.split('/')[1];
   }
@@ -30,7 +21,7 @@ export default function Header({ location }) {
               alt="Logo do Brain Puzzle"
               style={{ width: '52px', height: 'auto' }}
             />{' '}
-            SmartPuzzle
+            BrainPuzzle
           </span>
         </Link>
         <button
@@ -102,11 +93,7 @@ export default function Header({ location }) {
               className="dropdown-menu dropdown-menu-right"
               aria-labelledby="dropdownMenuButton"
             >
-              <button
-                type="button"
-                className="dropdown-item"
-                // onClick={handleSignOut}
-              >
+              <button type="button" className="dropdown-item">
                 Sair
               </button>
             </div>

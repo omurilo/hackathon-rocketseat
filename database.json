@@ -1,5 +1,5 @@
 {
-  "disciplinas": [
+  "desafios": [
     {
       "id": 1,
       "name": "Desafio S1",
@@ -16,47 +16,94 @@
       "id": 3,
       "name": "Desafio de Física",
       "category": "Física",
-      "color": "#ffc107"
+      "color": "#fe9a01"
     }
   ],
   "carreiras": [
     {
       "id": 1,
-      "name": "Desafio R1",
+      "name": "Desafio de Medicina",
       "category": "Medicina",
       "color": "#28a745"
     },
     {
       "id": 2,
-      "name": "Desafio R2",
+      "name": "Desafio de Arquitetura",
       "category": "Arquitetura",
-      "color": "#ffc107"
+      "color": "#fe9a01"
     },
     {
       "id": 3,
-      "name": "Desafio R3",
-      "category": "Economia",
+      "name": "Desafio de Biologia",
+      "category": "Biologia",
       "color": "#dc3545"
     }
   ],
-  "desafios": [
+  "disciplinas": [
     {
       "id": 1,
-      "name": "Desafio H1",
-      "category": "Hard code",
+      "name": "Tutorial",
+      "description": "Tutorial básico para que possa aprender a utilizar corretamente a plataforma",
+      "category": "Tutorial",
       "color": "#28a745"
     },
     {
       "id": 2,
-      "name": "Desafio H2",
-      "category": "Super hard code",
-      "color": "#ffc107"
+      "name": "Desafio de Inglês",
+      "description": "Nesse desafio, você terá de traduzir um código escrito em portugol para inglês",
+      "category": "Inglês",
+      "color": "#fe9a01"
     },
     {
       "id": 3,
-      "name": "Desafio H3",
-      "category": "Ultra hard code",
-      "color": "#dc3545"
+      "name": "Desafio de Física",
+      "description": "Você conhece os principios básicos de física? Teste seu conhecimento brincando com a fórmula da velocidade",
+      "category": "Física",
+      "color": "#26b4fb"
+    }
+  ],
+  "filtros-disciplinas": [
+    {
+      "name": "Física",
+      "color": "#26b4fb"
+    },
+    {
+      "name": "Inglês",
+      "color": "#f39a01"
+    },
+    {
+      "name": "Tutorial",
+      "color": "#82cf02"
+    },
+    {
+      "name": "História",
+      "color": "#8395a7"
+    },
+    {
+      "name": "Português",
+      "color": "#f30092"
+    }
+  ],
+  "filtros-carreiras": [
+    {
+      "name": "Jornalismo",
+      "color": "#26b4fb"
+    },
+    {
+      "name": "Arquitetura",
+      "color": "#f39a01"
+    },
+    {
+      "name": "Medicina",
+      "color": "#82cf02"
+    },
+    {
+      "name": "Direito",
+      "color": "#8395a7"
+    },
+    {
+      "name": "Biologia",
+      "color": "#f30092"
     }
   ]
 }

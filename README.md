@@ -1,6 +1,10 @@
-## Available Scripts
+## Brain Puzzle
 
-In the project directory, you can run:
+
+## How to start the app?
+1. Install the project dependencies: `yarn install`;
+2. Start the server: `yarn server`;
+3. Start the web application: `yarn start`;
 
 ### `npm start`
 

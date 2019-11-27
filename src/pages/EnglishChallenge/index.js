@@ -1,7 +1,13 @@
 import React, { useState } from 'react';
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 import Page from '~/components/Page';
-import { Button, Code, FlexContainer } from './styles';
+import {
+  DescriptionContainer,
+  FlexContainer,
+  Code,
+  Description,
+  Button,
+} from './styles';
 import Alert from '~/services/Alert';
 
 export default function EnglishChallenge() {
@@ -82,6 +88,12 @@ export default function EnglishChallenge() {
 
   return (
     <Page title="Desafio de inglês">
+      <DescriptionContainer>
+        <Description>
+          O código abaixo está escrito em português. Arraste as peças no menu à
+          direita para reproduzir o mesmo resultado em inglês.
+        </Description>
+      </DescriptionContainer>
       <FlexContainer>
         <Code>
           <pre>
@@ -90,11 +102,11 @@ export default function EnglishChallenge() {
                 x=12*12;
                 se x === 144;
                 entao
-                  imprima 'Correct answer';
+                imprima 'Correct answer';
                 senao
-                  imprima 'Incorrect answer';
+                imprima 'Incorrect answer';
                 fim
-              `}
+                `}
             </code>
           </pre>
         </Code>

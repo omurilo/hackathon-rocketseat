@@ -11,9 +11,7 @@ import GlobalStyle from './styles/global';
 import 'react-toastify/dist/ReactToastify.css';
 
 toast.configure({
-  // position: toast.POSITION.TOP_CENTER,
   autoClose: 2000,
-  // hideProgressBar: true,
   transition: Slide,
 });
 

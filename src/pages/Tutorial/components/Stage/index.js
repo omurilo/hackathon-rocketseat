@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-// import Konva from 'konva';
 import { Stage, Layer, Circle } from 'react-konva';
 import {
   FaArrowAltCircleDown,
@@ -55,30 +54,6 @@ function StageContainer({ width, height, delta, radius }) {
         break;
     }
   }
-
-  // function handleMoveByKeyDown(e) {
-  //   if (e.keyCode === 37) {
-  //     if (circleX-delta > dimensions.minX) {
-  //       setCircleX(circleX - delta);
-  //     }
-  //   } else if (e.keyCode === 38) {
-  //     if (circleY-delta > dimensions.minY) {
-  //       setCircleY(circleY - delta);
-  //     }
-  //   } else if (e.keyCode === 39) {
-  //     if (circleX+delta < dimensions.maxX) {
-  //       setCircleX(circleX + delta);
-  //     }
-  //   } else if (e.keyCode === 40) {
-  //     if (circleY+delta < dimensions.maxY) {
-  //       setCircleY(circleY + delta);
-  //     }
-  //   } else {
-  //     return;
-  //   }
-
-  //   e.preventDefault();
-  // }
 
   return (
     <div>

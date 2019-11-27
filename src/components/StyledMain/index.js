@@ -7,9 +7,8 @@ const StyledMain = styled.main`
 
   p {
     margin: 0 0 4px 4px;
-    /* color: #fff; */
-    font-size: 14px;
-    font-weight: 600;
+    color: #222;
+    font-size: 15px;
   }
 `;
 

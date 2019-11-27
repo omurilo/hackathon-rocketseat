@@ -3,7 +3,7 @@ import { Switch } from 'react-router-dom';
 import Route from './Route';
 
 import Challenges from '~/pages/Challenges';
-import BasicChallenge from '~/pages/BasicChallenge';
+import Tutorial from '~/pages/Tutorial';
 import EnglishChallenge from '~/pages/EnglishChallenge';
 import PhysicsChallenge from '~/pages/PhysicsChallenge';
 
@@ -13,9 +13,9 @@ export default function Routes() {
       <Route exact path="/disciplinas" component={Challenges} />
       <Route exact path="/desafios" component={Challenges} />
       <Route exact path="/carreiras" component={Challenges} />
-      <Route exact path="/desafio/1" component={BasicChallenge} />
-      <Route exact path="/desafio/2" component={EnglishChallenge} />
-      <Route exact path="/desafio/3" component={PhysicsChallenge} />
+      <Route exact path="/disciplina/1" component={Tutorial} />
+      <Route exact path="/disciplina/2" component={EnglishChallenge} />
+      <Route exact path="/disciplina/3" component={PhysicsChallenge} />
     </Switch>
   );
 }
