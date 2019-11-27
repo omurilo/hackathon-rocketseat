@@ -1,34 +1,62 @@
 # Brain Puzzle
-
-## Rodar o App?
-
-### `yarn install`
-### `yarn json-server --p 3333 ./database.json`
-### `yarn start`
-
-Abrir [http://localhost:3000/disciplinas](http://localhost:3000/disciplinas).
-
-
 <img width="498" alt="brain-puzzle" src="https://user-images.githubusercontent.com/47576846/69723487-6e7f6d00-10f8-11ea-9eda-fdaa141955ce.png">
 
+## Descrição do projeto
+### Qual o problema geral?
+Muita gente no ensino médio não sabe que programação é um caminho viável". Como gerar interesse em programação?
 
-A nossa solução se chama Brain Puzzle e o problema que estamos tentando resolver é introduzir a programação para alunos do ensino médio.
+### Qual a solução?
+Um puzzle interdisciplinar utilizando as matérias da matriz curricular e as carreiras mais tradicionais (Ex.: engenharia, medicina, direito) para gerar interesse na programação.
 
-## Maior desafio
-O maior desafio que encontramos foi despertar interesse em uma persona com o ápice de sentimentos a flor da pele, despertar interesse em adolescentes não é uma tarefa fácil e foi com essa mentalidade que decidimos aproveitar duas grandes oportunidades para criar esse interesse inicial.
+### Qual o problema da instituição resolve?
+Resolve o problema da falta de interesse dos alunos pelas matérias da instituição utilizando métodos lúdicos ao invés da maneira tradicional.
 
-Uma delas é óbvia e não poderíamos deixar de aproveitar a grande atenção que o nosso público tem por jogos e a segunda e considerada mais importante por nós é utilizar da carência do educador por materiais diferenciados para atrair os alunos pelas grades curriculares do ensino médio.
+### O que vai fazer o aluno utilizar inicialmente essa aplicação?
+A fuga das aulas tradicionais, que são cansativas, métodicas e não fazem com que o aluno assimile inicialmente todo o conhecimento.
 
-## A solução
-Então a solução, de certa forma, é “forçar” os alunos a acompanharem a grade curricular individual de cada matéria com uma metodologia mais dinâmica e introduzir a programação com jogos para despertar o interesse nos alunos.
+### Por que vai gerar interesse no aluno em programação?
+Porque ele consegue perceber que a programação não é um assunto geek (de outro mundo) e está aplicado em outras áreas de conhecimento. Por exemplo: um aluno que pretendia ser médico, pode perceber que a programação está muito associada à medicina e que ele pode melhorar seu trabalho com o uso da programação.
 
-Na primeira tela da aplicação temos um tutorial onde o aluno precisa movimentar um circulo na tela para uma direção utilizando uma seta e solicitamos por meio de código que ele retorne o circulo a posição original e assim vamos exemplificando ao decorrer do tutorial o poder da programação movimentado objetos.
+### Como vai funcionar o sistema?
+* A empresa vai alimentar inicialmente o sistema, em conjunto com a equipe da escola, com desafios e
+* O professor de cada disciplina vai passar o endereço da aplicação para os alunos, de acordo com a disciplina, e os acompanhará durante as tarefas
+* O aluno vai acessar o sistema, inicialmente, na aula, mas poderá acessá-lo a partir de fora.
 
-Depois do termino do tutorial vamos para o primeiro desafio disciplinar de Inglês, onde o desafio é o aluno entender a lógica da programação utilizando uma sintaxe parecida com o “Portugol” apresentada por nós e recriar a mesma lógica utilizando palavras em inglês para auxiliar no aprendizado da grade disciplinar.
+## Como utilizar o sistema?
+
+### Instalação
+1. Instale as dependências do projeto: `yarn install`;
+2. Inicie o servidor: `yarn server`;
+3. Inicie a aplicação web: `yarn start`;
+4. Acesse `http://localhost:3000`.
+
+### Como será o fluxo completo de utilização?
+1. A instituição de ensino adquire a plataforma;
+2. Os profissionais de ensino da instituição receberão treinamento de como utilizar a plataforma;
+3. Os professores colaborarão com a empresa para criação dos desafios;
+4. Os professores utilizarão a plafatorma como meio alternativo de aula às aulas tradicionais;
+5. Os alunos terão acesso à plataforma durante a aula, mas serão estimulados à utilizá-la fora da instituição.
+
+### Stakeholders
+
+#### Instituição de ensino
+- Terá acesso a uma plataforma de ensino que complemeta sua estrutura curricular com utilização de programação dentro do contexto das disciplinas tradicionais.
+
+#### Professor
+- Ganhará mais uma ferramenta para estimular os seus alunos a se interessarem tanto pelo seu conteúdo quanto pela programação.
+
+#### Aluno
+- Receberá uma nova forma de aprendizado, que poderá estimulá-lo durante as aulas.
 
 ## Roadmap
 
-- Criar um Dashboard para instituição ter um maior controle sobre o fluxo da aplicação
+### O que foi desenvolvido até o momento?
+* Interface utilizada pelo aluno;
+* 3 Desafios relacionados a disciplinas (Física, Inglês e um tutorial da plataforma);
+* Filtragem por disciplina;
+* Separação de categorias em disciplinas e carreiras.
 
-
-
+### Quais os próximos passos?
+* Interface utilizada pelo professor e pela instituição de ensino;
+* Desafios relacionados às carreiras que o aluno pode escolher (Medicina, Arquitetura, Direito, etc);
+* Programação em blocos (já há uma primeira versão dessa funcionalidade. Se necessário, podemos demonstrá-lo).
