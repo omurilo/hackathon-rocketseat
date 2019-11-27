@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 import Page from '~/components/Page';
 import { Button, Code, FlexContainer } from './styles';
+import Alert from '~/services/Alert';
 
 export default function EnglishChallenge() {
   const items = [
@@ -67,13 +68,16 @@ export default function EnglishChallenge() {
   }
 
   function isCorrect() {
-    let res = 'Correta';
+    let correct = true;
     for (let i = 0; i < words.length; i += 1) {
       if (words[i].id !== i.toString()) {
-        res = 'False';
+        correct = false;
       }
     }
-    alert(res);
+    Alert.fire({
+      title: `Resposta ${correct ? 'Correta!' : 'Incorreta'}`,
+      icon: 'success',
+    });
   }
 
   return (
